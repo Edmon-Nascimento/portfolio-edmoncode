@@ -3,7 +3,7 @@ import commitIcon from "../assets/icons/commit.svg";
 
 export default function Hero() {
   return (
-    <main className="min-h-screen w-full px-10 flex flex-col items-center pt-30 md:pt-45 lg:pt-60">
+    <main className="min-h-screen w-full px-10 flex flex-col items-center pt-30 md:pt-45 lg:pt-60 md:min-h-auto md:mb-20 lg:min-h-screen ">
       <div className="flex flex-col items-center justify-between w-10/12 md:flex-row-reverse lg:max-w-7xl">
         <img
           src=""
@@ -12,8 +12,12 @@ export default function Hero() {
         />
 
         <div className=" text-white text-center lg:text-left">
-          <p className="text-white text-2xl mb-2 lg:text-6xl">Edmon Nascimento</p>
-          <p className="text-white text-xl mb-8 lg:mb-5 lg:text-4xl">Desenvolvedor front-end</p>
+          <p className="text-white text-2xl mb-2 lg:text-6xl">
+            Edmon <span className="text-[#7ff7ff]">Nascimento</span>
+          </p>
+          <p className="text-white text-xl mb-8 lg:mb-5 lg:text-4xl">
+            Desenvolvedor front-end
+          </p>
           <p className="max-w-lg hidden lg:block mb-10 lg:text-lg">
             Desenvolvendo experiências web modernas com foco em performance,
             usabilidade e código escalável.
