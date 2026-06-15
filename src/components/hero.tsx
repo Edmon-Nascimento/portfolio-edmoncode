@@ -25,7 +25,7 @@ export default function Hero() {
 
           <div className="flex flex-col gap-5 lg:flex-row lg:gap-5">
             <Button className="bg-[#7ff7ff] h-12 px-10 text-black cursor-pointer">
-              Ver projetos
+              <a href="#projects">Ver projetos</a>
               <img src={commitIcon} alt="" />
             </Button>
             <Button className="ring ring-[#7ff7ff] h-12 px-10 cursor-pointer">

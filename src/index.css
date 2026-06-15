@@ -13,4 +13,5 @@ body {
     linear-gradient(90deg, #0b0a14 0%, #141321 30%, #1c1b2a 60%, #0f1f2f 100%);
 
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
