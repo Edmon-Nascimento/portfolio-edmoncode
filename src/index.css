@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background:
@@ -14,4 +18,23 @@ body {
 
   min-height: 100vh;
   scroll-behavior: smooth;
+  scrollbar-color: #7ff7ff #0b0a14;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0a14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7ff7ff;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7ff7ff99;
 }

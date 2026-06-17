@@ -25,5 +25,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/components/lib"]
+  "include": ["src", "src/components/lib", "@/components/LightPillar.tsx"]
 }
