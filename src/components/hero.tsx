@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import commitIcon from "../assets/icons/commit.svg";
 import profile from "../assets/images/profile.png";
-import PixelBlast from "./ui/PixelBlast";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
@@ -28,22 +27,6 @@ export default function Hero() {
   return (
     <main className="relative min-h-screen w-full px-10 flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-1 pointer-events-none hidden lg:block bg-linear-to-r from-[#1c1b2a]/85 via-[#1c1b2a]/40 to-transparent" />
-      <div className="absolute inset-0 z-0">
-        <PixelBlast
-          color="#7ff7ff"
-          pixelSize={4}
-          variant="square"
-          patternDensity={1}
-          patternScale={2}
-          speed={0.5}
-          edgeFade={0.25}
-          enableRipples={true}
-          rippleSpeed={0.25}
-          rippleIntensityScale={0.8}
-          transparent={true}
-          className="invisible lg:visible opacity-60"
-        />
-      </div>
       <div className="relative z-10 flex flex-col items-center justify-between gap-10 w-10/12 md:flex-row-reverse lg:max-w-7xl">
         <div className="relative flex items-center justify-center">
           <div className="absolute size-64 lg:size-110 rounded-full bg-[#7ff7ff]/10 blur-2xl" />
