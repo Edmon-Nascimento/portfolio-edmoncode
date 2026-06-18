@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { StarfieldBackground } from "@/components/ui/starfield";
 import commitIcon from "../assets/icons/commit.svg";
 import profile from "../assets/images/profile.png";
 import Typed from "typed.js";
@@ -26,15 +27,18 @@ export default function Hero() {
 
   return (
     <main className="relative min-h-screen w-full px-10 flex flex-col items-center justify-center overflow-hidden">
+      <div className="hidden md:block absolute inset-0">
+        <StarfieldBackground  />
+      </div>
       <div className="absolute inset-0 z-1 pointer-events-none hidden lg:block bg-linear-to-r from-[#1c1b2a]/85 via-[#1c1b2a]/40 to-transparent" />
       <div className="relative z-10 flex flex-col items-center justify-between gap-10 w-10/12 md:flex-row-reverse lg:max-w-7xl">
         <div className="relative flex items-center justify-center">
           <div className="absolute size-64 lg:size-110 rounded-full bg-[#7ff7ff]/10 blur-2xl" />
-          <div className="relative size-48 md:size-56 lg:size-100 rounded-full border-2 border-[#7ff7ff]/40 p-1">
+          <div className="relative size-48 md:size-56 lg:size-100 rounded-full border-2 border-[#7ff7ff]/40 p-1 transition-transform duration-500 ease-out hover:scale-[1.04] hover:shadow-[0_0_40px_rgba(127,247,255,0.3)]">
             <img
               src={profile}
               alt="Edmon Nascimento"
-              className="w-full h-full rounded-full object-cover object-top backdrop-blur-sm"
+              className="w-full h-full rounded-full object-cover object-top backdrop-blur-sm transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:rotate-1"
             />
           </div>
         </div>
