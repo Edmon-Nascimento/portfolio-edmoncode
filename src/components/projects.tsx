@@ -1,8 +1,9 @@
 import receitanamaoBg from "../assets/images/receita-na-mao.png";
 import ecommerceBg from "../assets/images/ecommerce-product-page.png";
 import geradordesenhasBg from "../assets/images/gerador-de-senhas.png";
+import goadvocaciaBg from "../assets/images/goadvocacia.png";
 import openLink from "../assets/icons/open_in_new.svg";
-import githubIcon from "../assets/icons/github-brands-solid-full.svg"
+import githubIcon from "../assets/icons/github-brands-solid-full.svg";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/components/ui/button";
 
@@ -40,6 +41,16 @@ export default function Projects() {
       github: "https://github.com/Edmon-Nascimento/gerador-de-senhas",
       stack: ["React", "TypeScript", "TailwindCSS"],
       date: "03/2026",
+    },
+    {
+      id: 4,
+      title: "GO Advocacia e Consultoria Jurídica",
+      coverImg: goadvocaciaBg,
+      description:
+        "Site institucional completo para escritório de advocacia, desenvolvido como freelancer do design ao deploy. O projeto incluiu levantamento de requisitos com o cliente, design responsivo mobile-first e estruturação de conteúdo, utilizando WordPress e Elementor. Foram aplicadas boas práticas de SEO on-page e otimização de performance, além de integração com WhatsApp e redes sociais para captação de leads.",
+      url: "https://advgabrieloliveira.com/",
+      stack: ["Wordpress", "Elementor", "CSS", "Figma"],
+      date: "12/2025",
     },
   ];
 
@@ -107,6 +118,7 @@ export default function Projects() {
                       <h2 className="text-2xl sm:text-3xl text-[#7ff7ff]/90 font-bold">
                         {project.title}
                       </h2>
+                      <span className="text-gray-400 mt-2">{project.date}</span>
                       <p className="text-[#7ff7ff]/70 text-base sm:text-lg text-justify my-3">
                         {project.description}
                       </p>
@@ -128,10 +140,16 @@ export default function Projects() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Button className="border border-[#7ff7ff] text-[#7ff7ff] bg-transparent h-12 px-10 cursor-pointer hover:bg-[#7ff7ff]/10 transition-all duration-300 w-full sm:w-auto">
-                            Ver no Github
-                            <img src={githubIcon} alt="" className="ml-2 w-6" />
-                          </Button>
+                          {project.github && (
+                            <Button className="border border-[#7ff7ff] text-[#7ff7ff] bg-transparent h-12 px-10 cursor-pointer hover:bg-[#7ff7ff]/10 transition-all duration-300 w-full sm:w-auto">
+                              Ver no Github
+                              <img
+                                src={githubIcon}
+                                alt=""
+                                className="ml-2 w-6"
+                              />
+                            </Button>
+                          )}
                         </a>
                       </div>
                     </div>
