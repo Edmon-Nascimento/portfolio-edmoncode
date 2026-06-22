@@ -13,7 +13,12 @@ export default function Hero() {
     if (!el) return;
     el.innerHTML = "";
     const typed = new Typed(el, {
-      strings: ["Desenvolvedor Front-End", "Desenvolvedor React", "Desenvolvedor TypeScript", "Entusiasta UI/UX"],
+      strings: [
+        "Desenvolvedor Front-End",
+        "Desenvolvedor React",
+        "Desenvolvedor TypeScript",
+        "Entusiasta UI/UX",
+      ],
       typeSpeed: 50,
       backSpeed: 30,
       loop: true,
@@ -28,7 +33,7 @@ export default function Hero() {
   return (
     <main className="relative min-h-screen w-full px-10 flex flex-col items-center justify-center overflow-hidden">
       <div className="hidden md:block absolute inset-0">
-        <StarfieldBackground  />
+        <StarfieldBackground />
       </div>
       <div className="absolute inset-0 z-1 pointer-events-none hidden lg:block bg-linear-to-r from-[#1c1b2a]/85 via-[#1c1b2a]/40 to-transparent" />
       <div className="relative z-10 flex flex-col items-center justify-between gap-10 w-10/12 md:flex-row-reverse lg:max-w-7xl">
@@ -47,8 +52,7 @@ export default function Hero() {
           <p className="text-3xl font-bold mb-2 lg:text-6xl ">
             Edmon <span className="text-[#7ff7ff]">Nascimento</span>
           </p>
-          <p ref={role} className="text-xl text-white/90 mb-6 lg:text-2xl">
-          </p>
+          <p ref={role} className="text-xl text-white/90 mb-6 lg:text-2xl"></p>
           <p className="max-w-lg hidden md:block mb-10 text-white/90 lg:text-lg leading-relaxed">
             Desenvolvendo experiências web modernas com foco em performance,
             usabilidade e código escalável.
@@ -71,7 +75,6 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-        
         <div className="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center p-1">
           <div className="w-1 h-2 rounded-full bg-[#7ff7ff] animate-bounce" />
         </div>
@@ -79,4 +82,3 @@ export default function Hero() {
     </main>
   );
 }
-

@@ -41,7 +41,10 @@ export default function Header() {
               <a
                 key={id}
                 href={`#${id}`}
-                onClick={(e) => { e.preventDefault(); scrollToSection(id); }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(id);
+                }}
                 className="text-white/70 text-lg hover:text-[#7ff7ff] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-[#7ff7ff] after:transition-all after:duration-300 hover:after:w-full"
               >
                 {label}
@@ -55,7 +58,11 @@ export default function Header() {
             <a
               key={id}
               href={`#${id}`}
-              onClick={(e) => { e.preventDefault(); setOpen(false); setTimeout(() => scrollToSection(id), 300); }}
+              onClick={(e) => {
+                e.preventDefault();
+                setOpen(false);
+                setTimeout(() => scrollToSection(id), 300);
+              }}
               className="text-white/70 text-2xl hover:text-[#7ff7ff] transition-colors duration-300"
             >
               {label}
