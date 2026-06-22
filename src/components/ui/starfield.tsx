@@ -49,9 +49,6 @@ export function StarfieldBackground({
 
     let animationId: number
     let tick = 0
-
-    const _centerX = width / 2
-    const _centerY = height / 2
     const maxDepth = 1500
 
     // Create stars
@@ -156,7 +153,7 @@ export function StarfieldBackground({
   }, [count, speed, starColor, twinkle])
 
   return (
-    <div ref={containerRef} className={cn("absolute inset-0 h-full w-fullt-0 h-full w-full overflow-hidden bg-[#0a0a0f]", className)}>
+    <div ref={containerRef} className={cn("absolute inset-0 h-full w-full overflow-hidden bg-[#0a0a0f]", className)}>
       <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
 
       {/* Subtle blue nebula glow */}
