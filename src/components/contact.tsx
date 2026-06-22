@@ -4,12 +4,12 @@ import linkedin from "../assets/icons/linkedin-brands-solid-full.svg";
 import github from "../assets/icons/github-brands-solid-full.svg";
 
 export default function Contact() {
-  const contactData = [
-    { id: 1, icon: whatsapp, title: "Whatsapp", href: "" },
-    { id: 2, icon: email, title: "Email", href: "" },
-    { id: 3, icon: linkedin, title: "LinkedIn", href: "" },
-    { id: 4, icon: github, title: "Github", href: "" },
-  ];
+const contactData = [
+  { id: 1, icon: whatsapp, title: "Whatsapp", href: "https://wa.me/5571920030489" },
+  { id: 2, icon: email, title: "Email", href: "mailto:edmoncode7@gmail.com" },
+  { id: 3, icon: linkedin, title: "LinkedIn", href: "https://www.linkedin.com/in/edmon-nascimento/" },
+  { id: 4, icon: github, title: "Github", href: "https://github.com/Edmon-Nascimento" },
+];
 
   return (
     <section
