@@ -60,7 +60,7 @@ export default function Hero() {
 
           <div className="flex flex-col gap-4 sm:flex-row">
             <a href="#projects">
-              <Button className="bg-[#7ff7ff] h-12 px-10 text-[#1c1b2a] font-semibold cursor-pointer hover:bg-[#7ff7ff]/80 transition-all duration-300 w-full sm:w-auto">
+              <Button className="bg-[#7ff7ff]/80 h-12 px-10 text-[#1c1b2a] font-semibold cursor-pointer hover:bg-[#7ff7ff] transition-all duration-300 w-full sm:w-auto">
                 Ver projetos
                 <img src={commitIcon} alt="" className="ml-2 w-4" />
               </Button>
