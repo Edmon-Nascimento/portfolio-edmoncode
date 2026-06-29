@@ -31,7 +31,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <main className="relative min-h-screen w-full px-10 flex flex-col items-center justify-center overflow-hidden">
+    <main className="relative min-h-screen w-full px-10 flex flex-col items-center justify-center overflow-hidden" id="home">
       <div className="hidden md:block absolute inset-0">
         <StarfieldBackground />
       </div>

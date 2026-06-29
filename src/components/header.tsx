@@ -26,9 +26,11 @@ export default function Header() {
     <header className="p-6 border-b bg-black/30 backdrop-blur-md border-[#7ff7ff]/20 lg:px-10 h-20 fixed w-screen z-50">
       <Sheet open={open} onOpenChange={setOpen}>
         <div className="flex justify-between items-center h-full">
-          <h1 className="text-white text-2xl font-bold">
-            EDMON<span className="text-[#7ff7ff]">CODE</span>
-          </h1>
+          <a href="#home">
+            <h1 className="text-white text-2xl font-bold">
+              EDMON<span className="text-[#7ff7ff]">CODE</span>
+            </h1>
+          </a>
 
           <SheetTrigger className="flex lg:hidden">
             <Button className="cursor-pointer bg-transparent border border-[#7ff7ff]/30 hover:border-[#7ff7ff] hover:bg-[#7ff7ff]/10 transition-all duration-300">
