@@ -66,12 +66,9 @@ export default function Projects() {
 
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((project) => (
-            <Dialog.Root>
+            <Dialog.Root key={project.id}>
               <Dialog.Trigger>
-                <div
-                  key={project.id}
-                  className="group relative rounded-xl overflow-hidden border border-[#7ff7ff]/20 bg-white/5 cursor-pointer hover:scale-110 duration-300"
-                >
+                <div className="group relative rounded-xl overflow-hidden border border-[#7ff7ff]/20 bg-white/5 cursor-pointer hover:scale-110 duration-300">
                   <img
                     src={project.coverImg}
                     alt={project.title}
@@ -95,18 +92,28 @@ export default function Projects() {
                 </div>
               </Dialog.Trigger>
               <Dialog.Portal>
-                <Dialog.Overlay className="fixed inset-0 bg-black/90" />
+                <Dialog.Overlay className="fixed inset-0 z-60 bg-black/90" />
                 <Dialog.Content
-                  className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-             w-[90vw] max-w-3xl max-h-[85vh] overflow-y-auto
-             bg-[#1c1b2a] rounded-2xl border border-[#7ff7ff]/20 
-             shadow-2xl shadow-[#7ff7ff]/10 focus:outline-none
-             data-[state=open]:animate-in data-[state=closed]:animate-out 
-             data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 
-             data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95"
+                  className="fixed left-1/2 top-1/2 z-70 -translate-x-1/2 -translate-y-1/2
+                  w-[95vw] max-w-3xl max-h-[90dvh] sm:max-h-[85vh] overflow-y-auto overscroll-contain
+                  bg-[#1c1b2a] rounded-2xl border border-[#7ff7ff]/20
+                  shadow-2xl shadow-[#7ff7ff]/10 focus:outline-none
+                  data-[state=open]:animate-in data-[state=closed]:animate-out
+                  data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0
+                  data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95"
                 >
-                  <div className="flex flex-col p-6 sm:p-8 gap-6">
-                    <div className="w-full">
+                  <div className="flex flex-col gap-4 p-4 sm:gap-6 sm:p-8">
+                    <div className="relative w-full">
+                      <Dialog.Close asChild>
+                        <button
+                          type="button"
+                          aria-label="Fechar projeto"
+                          className="absolute right-2 top-2 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-[#7ff7ff]/30 bg-[#1c1b2a]/90 text-xl text-[#7ff7ff] transition  sm:right-3 sm:top-3 cursor-pointer"
+                        >
+                          ×
+                        </button>
+                      </Dialog.Close>
+
                       <img
                         className="w-full h-56 sm:h-72 md:h-80 object-cover rounded-xl border border-[#7ff7ff]/20"
                         src={project.coverImg}

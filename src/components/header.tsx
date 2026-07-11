@@ -23,7 +23,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="p-6 border-b bg-black/30 backdrop-blur-md border-[#7ff7ff]/20 lg:px-10 h-20 fixed w-screen z-50">
+    <header className="p-6 border-b bg-black/30 backdrop-blur-md border-[#7ff7ff]/20 lg:px-10 h-20 fixed w-screen z-40">
       <Sheet open={open} onOpenChange={setOpen}>
         <div className="flex justify-between items-center h-full">
           <a href="#home">
