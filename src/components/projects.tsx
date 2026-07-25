@@ -2,6 +2,7 @@ import receitanamaoBg from "../assets/images/receita-na-mao.png";
 import ecommerceBg from "../assets/images/ecommerce-product-page.png";
 import geradordesenhasBg from "../assets/images/gerador-de-senhas.png";
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
+import loopstudiosBg from "../assets/images/loopstudios.png";
 import openLink from "../assets/icons/open_in_new.svg";
 import githubIcon from "../assets/icons/github-brands-solid-full.svg";
 import * as Dialog from "@radix-ui/react-dialog";
@@ -52,6 +53,17 @@ export default function Projects() {
       stack: ["Wordpress", "Elementor", "CSS", "Figma"],
       date: "12/2025",
     },
+    {
+      id: 5,
+      title: "Loopstudios",
+      coverImg: loopstudiosBg,
+      description:
+        "Projeto de site fictício desenvolvido com React, TypeScript e TailwindCSS, inspirado no design do Frontend Mentor. O objetivo foi recriar a interface e a experiência do usuário, aplicando conceitos de design responsivo, animações e interatividade.",
+      url: "https://landing-page-model-one.vercel.app/",
+      github: "https://github.com/Edmon-Nascimento/landing-page-model",
+      stack: ["React", "TypeScript", "TailwindCSS"],
+      date: "06/2026",
+    }
   ];
 
   return (
