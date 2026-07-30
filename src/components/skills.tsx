@@ -4,7 +4,6 @@ import js from "../assets/icons/js-brands-solid-full.svg";
 import react from "../assets/icons/react-brands-solid-full.svg";
 import ts from "../assets/icons/typescript-brands-solid-full.svg";
 import tailwind from "../assets/icons/tailwind-css-brands-solid-full.svg";
-import python from "../assets/icons/python-brands-solid-full.svg";
 import java from "../assets/icons/java-brands-solid-full.svg";
 import firebase from "../assets/icons/fire-solid-full.svg";
 import wordpress from "../assets/icons/wordpress-brands-solid-full.svg";
@@ -18,7 +17,6 @@ export default function Skills() {
     { name: "React", icon: react },
     { name: "TypeScript", icon: ts },
     { name: "TailwindCSS", icon: tailwind },
-    { name: "Python", icon: python },
     { name: "Java", icon: java },
     { name: "Firebase", icon: firebase },
     { name: "WordPress", icon: wordpress },
