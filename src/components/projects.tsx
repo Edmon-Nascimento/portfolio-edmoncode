@@ -22,28 +22,6 @@ export default function Projects() {
       date: "06/2026",
     },
     {
-      id: 2,
-      title: "Carrinho e-commerce",
-      coverImg: ecommerceBg,
-      description:
-        "Página de produto de e-commerce responsiva desenvolvida com React, TypeScript e TailwindCSS. O projeto foi construído como solução para um desafio do Frontend Mentor, com foco em layout adaptável para diferentes dispositivos e experiência de usuária interativa — incluindo galeria de imagens e carrinho de compras.",
-      url: "https://ecommerce-product-page-u9n1.vercel.app/",
-      github: "https://github.com/Edmon-Nascimento/ecommerce-product-page",
-      stack: ["React", "TypeScript", "TailwindCSS"],
-      date: "05/2026",
-    },
-    {
-      id: 3,
-      title: "Gerador de senhas",
-      coverImg: geradordesenhasBg,
-      description:
-        "Gerador de senhas seguras desenvolvido com JavaScript, HTML e CSS, utilizando Vite como bundler. Permite a criação de senhas aleatórias e personalizáveis, com foco em boas práticas de segurança e interface simples e responsiva.",
-      url: "https://geradordesenhas-edmoncode.vercel.app/",
-      github: "https://github.com/Edmon-Nascimento/gerador-de-senhas",
-      stack: ["React", "TypeScript", "TailwindCSS"],
-      date: "03/2026",
-    },
-    {
       id: 4,
       title: "GO Advocacia e Consultoria Jurídica",
       coverImg: goadvocaciaBg,
@@ -52,17 +30,6 @@ export default function Projects() {
       url: "https://advgabrieloliveira.com/",
       stack: ["Wordpress", "Elementor", "CSS", "Figma"],
       date: "12/2025",
-    },
-    {
-      id: 5,
-      title: "Loopstudios",
-      coverImg: loopstudiosBg,
-      description:
-        "Projeto de site fictício desenvolvido com React, TypeScript e TailwindCSS, inspirado no design do Frontend Mentor. O objetivo foi recriar a interface e a experiência do usuário, aplicando conceitos de design responsivo, animações e interatividade.",
-      url: "https://landing-page-model-one.vercel.app/",
-      github: "https://github.com/Edmon-Nascimento/landing-page-model",
-      stack: ["React", "TypeScript", "TailwindCSS"],
-      date: "06/2026",
     }
   ];
 
