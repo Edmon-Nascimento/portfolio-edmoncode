@@ -1,6 +1,5 @@
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
 import openLink from "../assets/icons/open_in_new.svg";
-import githubIcon from "../assets/icons/github-brands-solid-full.svg";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/components/ui/button";
 
@@ -106,22 +105,7 @@ export default function Projects() {
                           </Button>
                         </a>
 
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {project.github && (
-                            <Button className="border border-[#7ff7ff] text-[#7ff7ff] bg-transparent h-12 px-10 cursor-pointer hover:bg-[#7ff7ff]/10 transition-all duration-300 w-full sm:w-auto">
-                              Ver no Github
-                              <img
-                                src={githubIcon}
-                                alt=""
-                                className="ml-2 w-6"
-                              />
-                            </Button>
-                          )}
-                        </a>
+                       
                       </div>
                     </div>
                   </div>
