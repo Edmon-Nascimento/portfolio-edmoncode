@@ -1,8 +1,4 @@
-import receitanamaoBg from "../assets/images/receita-na-mao.png";
-import ecommerceBg from "../assets/images/ecommerce-product-page.png";
-import geradordesenhasBg from "../assets/images/gerador-de-senhas.png";
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
-import loopstudiosBg from "../assets/images/loopstudios.png";
 import openLink from "../assets/icons/open_in_new.svg";
 import githubIcon from "../assets/icons/github-brands-solid-full.svg";
 import * as Dialog from "@radix-ui/react-dialog";
@@ -12,17 +8,6 @@ export default function Projects() {
   const projectsData = [
     {
       id: 1,
-      title: "Receita na mão",
-      coverImg: receitanamaoBg,
-      description:
-        "Gerador de receitas com inteligência artificial desenvolvido com React, Vite e TailwindCSS, integrado à API de inferência da HuggingFace (modelo Mistral 7B). O projeto permite ao usuário adicionar os ingredientes disponíveis e receber uma receita gerada por IA, com título, lista de ingredientes, modo de preparo e dica do chef — com foco em arquitetura baseada em componentes e integração com APIs de LLM.",
-      url: "https://receitanamao.vercel.app/",
-      github: "https://github.com/Edmon-Nascimento/receita-na-mao",
-      stack: ["React", "TypeScript", "TailwindCSS"],
-      date: "06/2026",
-    },
-    {
-      id: 4,
       title: "GO Advocacia e Consultoria Jurídica",
       coverImg: goadvocaciaBg,
       description:
