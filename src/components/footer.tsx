@@ -4,8 +4,7 @@ export default function Footer() {
       <p className="text-center text-white/50 text-sm">
         &copy; 2026 Todos os direitos reservados |{" "}
         <a
-          href="https://linktree-edmoncode.vercel.app/"
-          target="_blank"
+          href="#"
           className="font-bold text-white/70 hover:text-[#7ff7ff] transition-colors duration-300"
         >
           EDMONCODE
