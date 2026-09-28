@@ -1,4 +1,5 @@
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
+import telaDuplaBg from "../assets/images/teladupla.png";
 import openLink from "../assets/icons/open_in_new.svg";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/components/ui/button";
@@ -7,6 +8,23 @@ export default function Projects() {
   const projectsData = [
     {
       id: 1,
+      title: "Tela Dupla",
+      coverImg: telaDuplaBg,
+      description:
+        "Aplicação web fullstack para exploração de filmes e séries, desenvolvida do planejamento ao deploy. O projeto conta com autenticação de usuários, integração com API externa para consulta de títulos, favoritos, reviews e histórico de navegação. A aplicação foi estruturada com frontend em Next.js e backend em Express, utilizando TypeScript, PostgreSQL e Prisma, com foco em organização de código, autenticação e integração entre frontend e API.",
+      url: "https://github.com/Edmon-Nascimento/teladupla",
+      stack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Express",
+        "PostgreSQL",
+        "Prisma",
+      ],
+      date: "09/2026",
+    },
+    {
+      id: 2,
       title: "GO Advocacia e Consultoria Jurídica",
       coverImg: goadvocaciaBg,
       description:
@@ -14,7 +32,7 @@ export default function Projects() {
       url: "https://advgabrieloliveira.com/",
       stack: ["Wordpress", "Elementor", "CSS", "Figma"],
       date: "12/2025",
-    }
+    },
   ];
 
   return (
@@ -104,8 +122,6 @@ export default function Projects() {
                             <img src={openLink} alt="" className="ml-2 w-4" />
                           </Button>
                         </a>
-
-                       
                       </div>
                     </div>
                   </div>
