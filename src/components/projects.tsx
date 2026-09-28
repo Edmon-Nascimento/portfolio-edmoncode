@@ -1,5 +1,6 @@
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
-import telaDuplaBg from "../assets/images/teladupla.png";
+import telaDuplaBg from "../assets/images/telaDuplaBg.png";
+import githubIcon from "../assets/icons/github-brands-solid-full.svg";
 import openLink from "../assets/icons/open_in_new.svg";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ export default function Projects() {
       description:
         "Aplicação web fullstack para exploração de filmes e séries, desenvolvida do planejamento ao deploy. O projeto conta com autenticação de usuários, integração com API externa para consulta de títulos, favoritos, reviews e histórico de navegação. A aplicação foi estruturada com frontend em Next.js e backend em Express, utilizando TypeScript, PostgreSQL e Prisma, com foco em organização de código, autenticação e integração entre frontend e API.",
       url: "https://github.com/Edmon-Nascimento/teladupla",
+      githubUrl: "https://github.com/Edmon-Nascimento/teladupla",
       stack: [
         "Next.js",
         "React",
@@ -122,6 +124,25 @@ export default function Projects() {
                             <img src={openLink} alt="" className="ml-2 w-4" />
                           </Button>
                         </a>
+                        {project.githubUrl && (
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button
+                              variant="outline"
+                              className="h-12 px-6 border-[#7ff7ff]/30 text-[#7ff7ff] hover:bg-[#7ff7ff]/10 cursor-pointer transition-all duration-300 w-full sm:w-auto"
+                            >
+                              GitHub
+                              <img
+                                src={githubIcon}
+                                alt=""
+                                className="mr-2 w-5"
+                              />
+                            </Button>
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>
