@@ -13,7 +13,7 @@ export default function Projects() {
       coverImg: telaDuplaBg,
       description:
         "Aplicação web fullstack para exploração de filmes e séries, desenvolvida do planejamento ao deploy. O projeto conta com autenticação de usuários, integração com API externa para consulta de títulos, favoritos, reviews e histórico de navegação. A aplicação foi estruturada com frontend em Next.js e backend em Express, utilizando TypeScript, PostgreSQL e Prisma, com foco em organização de código, autenticação e integração entre frontend e API.",
-      url: "https://github.com/Edmon-Nascimento/teladupla",
+      url: "https://teladupla.vercel.app",
       githubUrl: "https://github.com/Edmon-Nascimento/teladupla",
       stack: [
         "Next.js",
