@@ -3,6 +3,7 @@ import { StarfieldBackground } from "@/components/ui/starfield";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodeCommit } from "@fortawesome/free-solid-svg-icons";
 import profile from "../assets/images/profile.png";
+import { FaChevronDown } from "react-icons/fa";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
@@ -15,10 +16,10 @@ export default function Hero() {
     el.innerHTML = "";
     const typed = new Typed(el, {
       strings: [
-        "Desenvolvedor Front-End",
+        "Desenvolvedor  Fullstack",
+        "Desenvolvedor Java",
         "Desenvolvedor React",
         "Desenvolvedor TypeScript",
-        "Entusiasta UI/UX",
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -57,9 +58,10 @@ export default function Hero() {
             Edmon <span className="text-[#7ff7ff]">Nascimento</span>
           </p>
           <p ref={role} className="text-xl text-white/90 mb-6 lg:text-2xl"></p>
-          <p className="max-w-lg hidden md:block mb-10 text-white/90 lg:text-lg leading-relaxed">
-            Desenvolvendo experiências web modernas com foco em performance,
-            usabilidade e código escalável.
+          <p className="max-w-lg hidden md:block mb-10 text-white/90 lg:text-lg leading-relaxed text-justify">
+            Desenvolvendo aplicações web modernas e escaláveis, atuando no
+            frontend e backend com foco em performance, boas práticas e
+            experiência do usuário.
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row">
@@ -82,11 +84,13 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-        <div className="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center p-1">
-          <div className="w-1 h-2 rounded-full bg-[#7ff7ff] animate-bounce" />
-        </div>
-      </div>
+      <a
+        href="#about"
+        aria-label="Descer para a seção Sobre"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-[#7ff7ff] transition-colors duration-300 hover:text-white"
+      >
+        <FaChevronDown className="size-7 animate-[bounce_2s_ease-in-out_infinite]" />
+      </a>
     </main>
   );
 }

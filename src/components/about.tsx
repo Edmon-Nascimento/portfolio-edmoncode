@@ -8,19 +8,20 @@ export default function About() {
 
         <div className="border-l-2 mx-auto border-[#7ff7ff]/40 pl-6 flex flex-col gap-6 text-sm md:text-base lg:text-lg text-white/80 text-justify lg:max-w-3xl">
           <p>
-            Desenvolvedor Front-End com foco em React.js, TypeScript e
-            JavaScript moderno. Atuo na criação de aplicações web responsivas e
-            performáticas, utilizando componentização, integração com APIs REST
-            e boas práticas de desenvolvimento para construir interfaces
-            escaláveis, acessíveis e de fácil manutenção.
+            Desenvolvedor Fullstack com experiência em React, Next.js,
+            TypeScript e Java, atuando na construção de aplicações web modernas,
+            responsivas e escaláveis. Trabalho com desenvolvimento de
+            interfaces, integração com APIs REST, desenvolvimento back-end e
+            organização de código, buscando aplicar boas práticas e soluções de
+            fácil manutenção.
           </p>
           <p>
-            Tenho forte interesse em arquitetura front-end, experiência do
-            usuário e qualidade de software, buscando desenvolver soluções que
-            unam desempenho, usabilidade e código sustentável. Também venho
-            expandindo minha atuação para o desenvolvimento back-end, ampliando
-            minha capacidade de construir aplicações completas e bem
-            estruturadas.
+            Tenho experiência com componentização, integração entre serviços,
+            autenticação, persistência de dados e desenvolvimento de
+            funcionalidades completas do frontend ao backend. Também utilizo
+            ferramentas como Docker, PostgreSQL e Git no desenvolvimento dos
+            projetos, com foco em qualidade de software, performance e evolução
+            contínua das aplicações.
           </p>
         </div>
       </div>
