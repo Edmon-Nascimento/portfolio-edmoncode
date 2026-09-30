@@ -19,7 +19,12 @@ import {
   faFlask,
   faLeaf,
 } from "@fortawesome/free-solid-svg-icons";
-import { SiExpress, SiNextdotjs } from "react-icons/si";
+import {
+  SiElementor,
+  SiExpress,
+  SiNextdotjs,
+  SiWordpress,
+} from "react-icons/si";
 import type { IconType } from "react-icons";
 
 type Skill = {
@@ -33,6 +38,8 @@ export default function Skills() {
     { name: "HTML5", icon: faHtml5 },
     { name: "CSS3", icon: faCss3Alt },
     { name: "JavaScript", icon: faJs },
+    { name: "WordPress", reactIcon: SiWordpress },
+    { name: "Elementor", reactIcon: SiElementor },
     { name: "React", icon: faReact },
     { name: "TypeScript", icon: faTypescript },
     { name: "Next.js", reactIcon: SiNextdotjs },
