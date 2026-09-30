@@ -1,7 +1,11 @@
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
 import telaDuplaBg from "../assets/images/telaDuplaBg.png";
-import githubIcon from "../assets/icons/github-brands-solid-full.svg";
-import openLink from "../assets/icons/open_in_new.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Button } from "@/components/ui/button";
 
@@ -93,7 +97,7 @@ export default function Projects() {
                           aria-label="Fechar projeto"
                           className="absolute right-2 top-2 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-[#7ff7ff]/30 bg-[#1c1b2a]/90 text-xl text-[#7ff7ff] transition  sm:right-3 sm:top-3 cursor-pointer"
                         >
-                          ×
+                          <FontAwesomeIcon icon={faXmark} aria-hidden="true" />
                         </button>
                       </Dialog.Close>
 
@@ -121,7 +125,11 @@ export default function Projects() {
                         >
                           <Button className="bg-[#7ff7ff] h-12 px-10 text-[#1c1b2a] font-semibold cursor-pointer hover:bg-[#7ff7ff]/80 transition-all duration-300 w-full sm:w-auto">
                             Ver projeto
-                            <img src={openLink} alt="" className="ml-2 w-4" />
+                            <FontAwesomeIcon
+                              icon={faArrowUpRightFromSquare}
+                              aria-hidden="true"
+                              className="ml-2 w-4"
+                            />
                           </Button>
                         </a>
                         {project.githubUrl && (
@@ -135,9 +143,9 @@ export default function Projects() {
                               className="h-12 px-6 border-[#7ff7ff]/30 text-[#7ff7ff] hover:bg-[#7ff7ff]/10 cursor-pointer transition-all duration-300 w-full sm:w-auto"
                             >
                               GitHub
-                              <img
-                                src={githubIcon}
-                                alt=""
+                              <FontAwesomeIcon
+                                icon={faGithub}
+                                aria-hidden="true"
                                 className="mr-2 w-5"
                               />
                             </Button>

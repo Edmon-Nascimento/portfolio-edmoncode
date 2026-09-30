@@ -1,15 +1,38 @@
-import whatsapp from "../assets/icons/whatsapp-brands-solid-full.svg";
-import email from "../assets/icons/envelope-solid-full.svg";
-import linkedin from "../assets/icons/linkedin-brands-solid-full.svg";
-import github from "../assets/icons/github-brands-solid-full.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
-const contactData = [
-  { id: 1, icon: whatsapp, title: "Whatsapp", href: "https://wa.me/5571982580281" },
-  { id: 2, icon: email, title: "Email", href: "mailto:edmoncode7@gmail.com" },
-  { id: 3, icon: linkedin, title: "LinkedIn", href: "https://www.linkedin.com/in/edmon-nascimento/" },
-  { id: 4, icon: github, title: "Github", href: "https://github.com/Edmon-Nascimento" },
-];
+  const contactData = [
+    {
+      id: 1,
+      icon: faWhatsapp,
+      title: "Whatsapp",
+      href: "https://wa.me/5571982580281",
+    },
+    {
+      id: 2,
+      icon: faEnvelope,
+      title: "Email",
+      href: "mailto:edmoncode7@gmail.com",
+    },
+    {
+      id: 3,
+      icon: faLinkedin,
+      title: "LinkedIn",
+      href: "https://www.linkedin.com/in/edmon-nascimento/",
+    },
+    {
+      id: 4,
+      icon: faGithub,
+      title: "Github",
+      href: "https://github.com/Edmon-Nascimento",
+    },
+  ];
 
   return (
     <section
@@ -29,11 +52,11 @@ const contactData = [
               target="_blank"
               className="group flex flex-col items-center gap-3 p-6 rounded-xl border border-[#7ff7ff]/20 bg-white/5 hover:border-[#7ff7ff]/60 hover:bg-[#7ff7ff]/10 transition-all duration-300"
             >
-              <div className="size-10">
-                <img
-                  src={contact.icon}
-                  alt={contact.title}
-                  className="w-full"
+              <div className="size-10 flex items-center justify-center">
+                <FontAwesomeIcon
+                  icon={contact.icon}
+                  aria-label={contact.title}
+                  className="size-8! text-[#7ff7ff]"
                 />
               </div>
               <span className="text-sm text-white/70 group-hover:text-[#7ff7ff] transition-colors duration-300">

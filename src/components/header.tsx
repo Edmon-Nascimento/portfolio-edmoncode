@@ -1,6 +1,7 @@
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import menuIcon from "../assets/icons/bars-solid-full.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const NAV_ITEMS = [
@@ -34,7 +35,11 @@ export default function Header() {
 
           <SheetTrigger className="flex lg:hidden">
             <Button className="cursor-pointer bg-transparent border border-[#7ff7ff]/30 hover:border-[#7ff7ff] hover:bg-[#7ff7ff]/10 transition-all duration-300">
-              <img src={menuIcon} alt="Menu" className="w-5" />
+              <FontAwesomeIcon
+                icon={faBars}
+                aria-label="Menu"
+                className="w-5"
+              />
             </Button>
           </SheetTrigger>
 

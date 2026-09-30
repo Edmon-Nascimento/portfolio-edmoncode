@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { StarfieldBackground } from "@/components/ui/starfield";
-import commitIcon from "../assets/icons/commit.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCodeCommit } from "@fortawesome/free-solid-svg-icons";
 import profile from "../assets/images/profile.png";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
@@ -31,7 +32,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <main className="relative min-h-screen w-full px-10 flex flex-col items-center justify-center overflow-hidden" id="home">
+    <main
+      className="relative min-h-screen w-full px-10 flex flex-col items-center justify-center overflow-hidden"
+      id="home"
+    >
       <div className="hidden md:block absolute inset-0">
         <StarfieldBackground />
       </div>
@@ -62,7 +66,11 @@ export default function Hero() {
             <a href="#projects">
               <Button className="bg-[#7ff7ff]/80 h-12 px-10 text-[#1c1b2a] font-semibold cursor-pointer hover:bg-[#7ff7ff] transition-all duration-300 w-full sm:w-auto">
                 Ver projetos
-                <img src={commitIcon} alt="" className="ml-2 w-4" />
+                <FontAwesomeIcon
+                  icon={faCodeCommit}
+                  aria-hidden="true"
+                  className="ml-2 w-4"
+                />
               </Button>
             </a>
             <a href="#contact">

@@ -1,26 +1,52 @@
-import html from "../assets/icons/html5-brands-solid-full.svg";
-import css from "../assets/icons/css3-brands-solid-full.svg";
-import js from "../assets/icons/js-brands-solid-full.svg";
-import react from "../assets/icons/react-brands-solid-full.svg";
-import ts from "../assets/icons/typescript-brands-solid-full.svg";
-import tailwind from "../assets/icons/tailwind-css-brands-solid-full.svg";
-import java from "../assets/icons/java-brands-solid-full.svg";
-import firebase from "../assets/icons/fire-solid-full.svg";
-import wordpress from "../assets/icons/wordpress-brands-solid-full.svg";
-import figma from "../assets/icons/figma-brands-solid-full.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import {
+  faCss3Alt,
+  faDocker,
+  faFigma,
+  faHtml5,
+  faJava,
+  faJs,
+  faNodeJs,
+  faPostgresql,
+  faReact,
+  faTailwindCss,
+  faTypescript,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faCodeBranch,
+  faDatabase,
+  faFlask,
+  faLeaf,
+} from "@fortawesome/free-solid-svg-icons";
+import { SiExpress, SiNextdotjs } from "react-icons/si";
+import type { IconType } from "react-icons";
+
+type Skill = {
+  name: string;
+  icon?: IconDefinition;
+  reactIcon?: IconType;
+};
 
 export default function Skills() {
-  const skills = [
-    { name: "HTML", icon: html },
-    { name: "CSS", icon: css },
-    { name: "JavaScript", icon: js },
-    { name: "React", icon: react },
-    { name: "TypeScript", icon: ts },
-    { name: "TailwindCSS", icon: tailwind },
-    { name: "Java", icon: java },
-    { name: "Firebase", icon: firebase },
-    { name: "WordPress", icon: wordpress },
-    { name: "Figma", icon: figma },
+  const skills: Skill[] = [
+    { name: "HTML5", icon: faHtml5 },
+    { name: "CSS3", icon: faCss3Alt },
+    { name: "JavaScript", icon: faJs },
+    { name: "React", icon: faReact },
+    { name: "TypeScript", icon: faTypescript },
+    { name: "Next.js", reactIcon: SiNextdotjs },
+    { name: "Tailwind CSS", icon: faTailwindCss },
+    { name: "Java", icon: faJava },
+    { name: "Spring Boot", icon: faLeaf },
+    { name: "Node.js", icon: faNodeJs },
+    { name: "Express", reactIcon: SiExpress },
+    { name: "PostgreSQL", icon: faPostgresql },
+    { name: "Prisma", icon: faDatabase },
+    { name: "Jest", icon: faFlask },
+    { name: "Docker", icon: faDocker },
+    { name: "Git", icon: faCodeBranch },
+    { name: "Figma", icon: faFigma },
   ];
   return (
     <section
@@ -31,19 +57,34 @@ export default function Skills() {
         <h2 className="text-2xl mb-5 md:text-3xl lg:text-4xl">Habilidades</h2>
 
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 mt-5 lg:mt-10">
-          {skills.map((skill) => (
-            <div
-              key={skill.name}
-              className="flex flex-col items-center gap-2 group"
-            >
-              <div className="size-20 p-3 rounded-xl border border-[#7ff7ff]/20 bg-white/5 group-hover:border-[#7ff7ff]/60 group-hover:bg-[#7ff7ff]/10 transition-all duration-300">
-                <img src={skill.icon} alt={skill.name} className="w-full" />
+          {skills.map((skill) => {
+            const ReactIcon = skill.reactIcon;
+
+            return (
+              <div
+                key={skill.name}
+                className="flex flex-col items-center gap-2 group"
+              >
+                <div className="size-20 p-3 rounded-xl border border-[#7ff7ff]/20 bg-white/5 flex items-center justify-center group-hover:border-[#7ff7ff]/60 group-hover:bg-[#7ff7ff]/10 transition-all duration-300">
+                  {ReactIcon ? (
+                    <ReactIcon
+                      aria-label={skill.name}
+                      className="size-10! text-[#7ff7ff]"
+                    />
+                  ) : (
+                    <FontAwesomeIcon
+                      icon={skill.icon!}
+                      aria-label={skill.name}
+                      className="size-10! text-[#7ff7ff]"
+                    />
+                  )}
+                </div>
+                <span className="text-xs text-white/60 group-hover:text-[#7ff7ff] transition-colors duration-300">
+                  {skill.name}
+                </span>
               </div>
-              <span className="text-xs text-white/60 group-hover:text-[#7ff7ff] transition-colors duration-300">
-                {skill.name}
-              </span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
