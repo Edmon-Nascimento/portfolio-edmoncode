@@ -1,6 +1,6 @@
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
 import telaDuplaBg from "../assets/images/telaDuplaBg.png";
-import receitaNaMaoBg from "../assets/images/receitaNaMao.png"
+import receitaNaMaoBg from "../assets/images/receitaNaMao.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -32,6 +32,17 @@ export default function Projects() {
     },
     {
       id: 2,
+      title: "Receita na mao",
+      coverImg: receitaNaMaoBg,
+      description:
+        "Um gerador de receitas com inteligência artificial que ajuda os usuários a descobrir novas ideias de refeições com base nos ingredientes disponíveis. Desenvolvido com foco na simplicidade, acessibilidade e design responsivo, ele utiliza IA para criar receitas criativas e práticas.",
+      url: "https://receita-na-mao.vercel.app/",
+      githubUrl: "https://github.com/Edmon-Nascimento/receitaNaMao",
+      stack: ["React", "TypeScript", "Shadcn/ui", "Google Gemini API "],
+      date: "07/2026",
+    },
+    {
+      id: 3,
       title: "GO Advocacia e Consultoria Jurídica",
       coverImg: goadvocaciaBg,
       description:
@@ -39,21 +50,6 @@ export default function Projects() {
       url: "https://advgabrieloliveira.com/",
       stack: ["Wordpress", "Elementor", "CSS", "Figma"],
       date: "12/2025",
-    },{
-      id: 2,
-      title: "Receita na mao",
-      coverImg: receitaNaMaoBg,
-      description:
-        "Um gerador de receitas com inteligência artificial que ajuda os usuários a descobrir novas ideias de refeições com base nos ingredientes disponíveis. Desenvolvido com foco na simplicidade, acessibilidade e design responsivo, ele utiliza IA para criar receitas criativas e práticas.",
-      url: "https://receita-na-mao.vercel.app/",
-      githubUrl: "https://github.com/Edmon-Nascimento/receitaNaMao",
-      stack: [
-        "React",
-        "TypeScript",
-        "Shadcn/ui",
-        "Google Gemini API "
-      ],
-      date: "07/2026",
     },
   ];
 
