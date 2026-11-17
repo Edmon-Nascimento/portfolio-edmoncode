@@ -1,6 +1,7 @@
 import goadvocaciaBg from "../assets/images/goadvocacia.png";
 import telaDuplaBg from "../assets/images/telaDuplaBg.png";
 import receitaNaMaoBg from "../assets/images/receitaNaMao.png";
+import lumaBg from "../assets/images/lumaBg.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -43,6 +44,17 @@ export default function Projects() {
     },
     {
       id: 3,
+      title: "Luma Learning Platform",
+      coverImg: lumaBg,
+      description:
+        "Landing page responsiva para uma plataforma de aprendizagem, desenvolvida como parte do desafio técnico para a Buzzvel. O projeto foi construído com Next.js, React, TypeScript e Tailwind CSS, priorizando fidelidade ao design de referência, componentização e reutilização de código. A implementação contempla layouts adaptáveis para desktop, tablet e mobile, além de navegação e elementos interativos, com foco em acessibilidade, organização e performance.",
+      url: "https://luma-landing-page-chi.vercel.app/",
+      githubUrl: "https://github.com/Edmon-Nascimento/luma-landing-page",
+      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      date: "11/2026",
+    },
+    {
+      id: 4,
       title: "GO Advocacia e Consultoria Jurídica",
       coverImg: goadvocaciaBg,
       description:
